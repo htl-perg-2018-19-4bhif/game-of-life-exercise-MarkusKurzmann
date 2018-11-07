@@ -69,11 +69,11 @@ window.onload = () => {
 
 
   //drawAliveCells
-  function alive(){
-    for(let i = 0; i<cells.length; i++){
-      for(let j = 0; j<cells[i].length; j++){
-        if((cells[i][j] = canLive(j,i)) == true){
-          drawSingleCell(j*cellSize,i*cellSize);
+  function alive() {
+    for (let i = 0; i < cells.length; i++) {
+      for (let j = 0; j < cells[i].length; j++) {
+        if ((cells[i][j] = canLive(j, i)) == true) {
+          drawSingleCell(j * cellSize, i * cellSize);
         }
       }
     }
